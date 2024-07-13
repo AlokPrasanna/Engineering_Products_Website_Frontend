@@ -11,7 +11,7 @@ import { Route, Routes } from 'react-router-dom'
 
 const App:React.FC = () => {
   return (
-    <div className='ml-5 mr-5' >
+    <div className='w-full h-full flex-col' >
       <div className=''>
         <Header />
       </div>
