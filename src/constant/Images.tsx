@@ -1,7 +1,7 @@
 // -------------------- Imports --------------------
-import Header from "./Header/Header";
+const Images = {
+    logo:"/Images/logo.png",
+}
 
 // -------------------- Exports --------------------
-export {
-    Header,
-}
+export { Images };

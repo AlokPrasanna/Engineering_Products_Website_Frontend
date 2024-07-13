@@ -1,13 +1,19 @@
 // -------------------- Imports --------------------
 import React from 'react'
-import { Home } from './pages'
+import { 
+  Home,
+} from './pages'
+import { 
+  Header, 
+} from './components/molecules'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
 const App:React.FC = () => {
   return (
-    <div>
-      <div>
+    <div className='ml-5 mr-5' >
+      <div className=''>
+        <Header />
       </div>
       <main>
         <Routes>
