@@ -1,9 +1,19 @@
+// -------------------- Imports --------------------
+import React from 'react'
+import { Home } from './pages'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
 
-function App() {
+const App:React.FC = () => {
   return (
-    <div className='w-full h-[200px] bg-slate-900'>
-      <p className='text-[25px] font-bold'>Hi</p>
+    <div>
+      <div>
+      </div>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </main>
     </div>
   )
 }
