@@ -1,14 +1,9 @@
 // -------------------- Imports --------------------
-import { 
-  Image, 
-  NavBar
-} from '../../atoms';
-import { 
-  Images 
-} from '../../../constant';
 import React from 'react';
+import { Image, NavBar } from '../../atoms';
+import { Images } from '../../../constant';
 
-const Header:React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div className='flex w-full h-[100px] px-[25px] py- justify-between items-center bg-[#dedce7]'>
       <div className='flex items-center gap-10'>
@@ -16,14 +11,16 @@ const Header:React.FC = () => {
           src={Images.logo} 
           alt='Logo' 
           style='
-            w-[120px]
+            md:w-[120px]
+            w-[250px]
           '
         />
         <NavBar 
           list={["Home","Control and Automation" , "Technology for Education" , "Research Instrumentation" , "About"]}
+          showContactButton={true}
         />
       </div>
-      <div className='flex gap-8 items-center'>
+      <div className='hidden md:flex gap-8 items-center'>
         <div>
           <button
             className='
@@ -46,7 +43,7 @@ const Header:React.FC = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
