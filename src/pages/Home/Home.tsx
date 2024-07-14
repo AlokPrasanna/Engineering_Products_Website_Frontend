@@ -15,8 +15,37 @@ import {
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+const paragraphVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i:any) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.15,
+      duration: 0.8,
+      ease: [0.6, -0.05, 0.01, 0.99],
+    },
+  }),
+};
 
 const Home: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.9, 
+  });
   return (
     <div>
       {/* Header Section */}
@@ -156,7 +185,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Our servises */}
-      <section className="flex flex-col items-center justify-center mb-[200px]">
+      <section className="flex flex-col items-center justify-center">
         <div className="mb-5">
           <h1 className="text-4xl font-bold">Our Services</h1>
         </div>
@@ -231,6 +260,45 @@ const Home: React.FC = () => {
           </div>
         </AwesomeSlider>
       </section>
+
+      {/* Our Technologies */}
+      <motion.section
+        className="flex flex-col items-center justify-center mt-[80px] mb-24"
+        ref={ref}
+        initial="hidden"
+        animate={inView ? 'visible' : 'hidden'}
+        variants={sectionVariants}
+      >
+        <div className="mb-5">
+          <h1 className="text-4xl font-bold">Our Technologies</h1>
+        </div>
+        <div className="grid items-center justify-center grid-cols-4 gap-5 px-10 mb-[100px] mt-5">
+          <div className="col-span-2">
+            {["Research and development", "Electronic fabrications", "Firmware development"].map((text, index) => (
+              <motion.p
+                key={text}
+                className="px-10 py-3 mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
+                custom={index}
+                variants={paragraphVariants}
+              >
+                {text}
+              </motion.p>
+            ))}
+          </div>
+          <div className="col-span-2">
+            {["Software developments", "Electro-mechanical system developments", "In house manufacturing"].map((text, index) => (
+              <motion.p
+                key={text}
+                className="px-10 py-3 mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
+                custom={index + 3}
+                variants={paragraphVariants}
+              >
+                {text}
+              </motion.p>
+            ))}
+          </div>
+        </div>
+      </motion.section>
 
       {/* Footer */}
       <section className="w-full">
