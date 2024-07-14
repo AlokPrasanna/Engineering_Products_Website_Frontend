@@ -5,6 +5,7 @@ import React from "react";
 import { Images } from "../../constant";
 import { 
   HomeTitleCard, 
+  LatestInovationCard, 
   WelcomeCard,
 } from "../../components/molecules";
 
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Header Section */}
-      <section className="w-full bg-[#dedce7]">
+      <section className="w-full bg-[#d2d0dc]">
         <AwesomeSlider
           className="w-full h-[75vh] bg-none"
           animation="cubeAnimation"
@@ -74,8 +75,8 @@ const Home: React.FC = () => {
       {/* Welcome Section */}
       <section className="md:mt-[8%] mt-[70px] flex flex-col items-center justify-center">
         <div className="text-center w-[80%]">
-          <h1 className="md:text-3xl text-xl font-bold">Welcome to Flexcept</h1>
-          <p className="text-sm mt-4 mb-8">
+          <h1 className="text-xl font-bold md:text-3xl">Welcome to Flexcept</h1>
+          <p className="mt-4 mb-8 text-sm font-semibold">
             We specialize in developing cutting-edge electronic, instrumentation, 
             and electromechanical systems, along with innovative software solutions. 
             Our focus includes customized instrumentation for multidisciplinary research, 
@@ -105,10 +106,42 @@ const Home: React.FC = () => {
       </section>
 
       {/* Latest Products */}
-      <section className="flex flex-col items-center justify-center">
-        <div>
+      <section className="flex flex-col items-center justify-center mb-[80px]">
+        <div className="mb-5">
           <h1 className="text-4xl font-bold">Our Latest Inovations</h1>
         </div>
+        <AwesomeSlider
+          className="w-full h-[75vh]"
+          animation="foldOutAnimation"
+          bullets={true}
+          organicArrows={false}
+          infinite={true}
+        >
+          <div>
+            <LatestInovationCard
+             src={Images.latest1}
+             alt="Latest Device 1"
+             title="Electronic Instrumentation Suit (ELS)" 
+             discription="17 Electronic instruments in a single device for electronic laboratories"
+            />
+          </div>
+          <div>
+            <LatestInovationCard
+             src={Images.latest2}
+             alt="Latest Device 2"
+             title="Process View" 
+             discription="Industrial indicators with multifunctional and multi color smart display"
+            />
+          </div>
+          <div>
+            <LatestInovationCard
+             src={Images.latest3}
+             alt="Latest Device 3"
+             title="FLX CS100" 
+             discription="PID control system demonstration kit with computerized control system and training platform for speed control and position control"
+            />
+          </div>
+        </AwesomeSlider>
       </section>
     </div>
   );

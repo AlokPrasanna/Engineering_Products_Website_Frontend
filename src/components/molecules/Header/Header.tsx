@@ -5,7 +5,7 @@ import { Images } from '../../../constant';
 
 const Header: React.FC = () => {
   return (
-    <div className='flex w-full h-[100px] px-[25px] py- justify-between items-center bg-[#dedce7]'>
+    <div className='flex w-full h-[100px] px-[25px] py- justify-between items-center bg-[#d2d0dc]'>
       <div className='flex items-center gap-10'>
         <Image 
           src={Images.logo} 
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           showContactButton={true}
         />
       </div>
-      <div className='hidden md:flex gap-8 items-center'>
+      <div className='items-center hidden gap-8 md:flex'>
         <div>
           <button
             className='

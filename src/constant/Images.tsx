@@ -6,7 +6,10 @@ const Images = {
     device:"/Images/device.png",
     automation:"/Images/automation.jpg",
     education:"/Images/education.jpg",
-    research:"/Images/research.jpg"
+    research:"/Images/research.jpg",
+    latest1:"/Images/17-single.png",
+    latest2:"/Images/process-view.png",
+    latest3:"/Images/flx-cs100.png",
 }
 
 // -------------------- Exports --------------------
