@@ -32,7 +32,7 @@ const Home: React.FC = () => {
             <HomeTitleCard 
               title="Electronic Instrumentation Suite"
               description="Virtual Instrument System for Electronic Laboratories"
-              src={Images.device}
+              src={Images.device1}
               alt="Device"
             />
           </div>
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
             <HomeTitleCard 
               title="FLX CS100"
               description="PID Control System Demonstration Kit"
-              src={Images.device}
+              src={Images.device2}
               alt="Device"
             />
           </div>
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
             <HomeTitleCard 
               title="Process View"
               description="Industrial Indicate"
-              src={Images.device}
+              src={Images.device1}
               alt="Device"
             />
           </div>
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
             <HomeTitleCard 
               title="FLX MC20"
               description="Synchronous Motion Controller"
-              src={Images.device}
+              src={Images.device4}
               alt="Device"
             />
           </div>
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
           <h1 className="text-4xl font-bold">Our Latest Inovations</h1>
         </div>
         <AwesomeSlider
-          className="w-full h-[75vh]"
+          className="w-full h-[75vh] mt-1"
           animation="foldOutAnimation"
           bullets={true}
           organicArrows={false}
@@ -142,6 +142,13 @@ const Home: React.FC = () => {
             />
           </div>
         </AwesomeSlider>
+      </section>
+
+      {/* Our servises */}
+      <section className="flex flex-col items-center justify-center mb-[80px]">
+        <div className="mb-5">
+          <h1 className="text-4xl font-bold">Our Services</h1>
+        </div>
       </section>
     </div>
   );
