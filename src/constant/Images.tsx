@@ -12,6 +12,14 @@ const Images = {
     latest1:"/Images/17-single.png",
     latest2:"/Images/process-view.png",
     latest3:"/Images/flx-cs100.png",
+    service1:"/Images/1ee.png",
+    service2:"/Images/2as.png",
+    service3:"/Images/3ms.png",
+    service4:"/Images/4ias.png",
+    service5:"/Images/5ici.png",
+    service6:"/Images/6rie.png",
+    service7:"/Images/7sit.png",
+    service8:"/Images/8ass.png",
 }
 
 // -------------------- Exports --------------------
