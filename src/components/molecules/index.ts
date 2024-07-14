@@ -4,6 +4,7 @@ import HomeTitleCard from "./HomeTitleCard/HomeTitleCard";
 import WelcomeCard from "./WelcomeCard/WelcomeCard";
 import LatestInovationCard from "./LatestInovationCard/LatestInovationCard";
 import ServiceCard from "./ServicesCard/ServicesCard";
+import Footer from "./Footer/Footer";
 
 // -------------------- Exports --------------------
 export {
@@ -12,4 +13,5 @@ export {
     WelcomeCard,
     LatestInovationCard,
     ServiceCard,
+    Footer,
 }

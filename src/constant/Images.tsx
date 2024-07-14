@@ -21,6 +21,7 @@ const Images = {
     service6:"/Images/6rie.png",
     service7:"/Images/7sit.png",
     service8:"/Images/8ass.png",
+    footer:"/Images/footer.png",
 }
 
 // -------------------- Exports --------------------

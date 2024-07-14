@@ -4,6 +4,7 @@ import React from "react";
 // -------------------- Imports Custom Libraries and components --------------------
 import { Images } from "../../constant";
 import { 
+  Footer,
   HomeTitleCard, 
   LatestInovationCard, 
   ServiceCard, 
@@ -155,7 +156,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Our servises */}
-      <section className="flex flex-col items-center justify-center mb-[80px]">
+      <section className="flex flex-col items-center justify-center mb-[200px]">
         <div className="mb-5">
           <h1 className="text-4xl font-bold">Our Services</h1>
         </div>
@@ -229,6 +230,11 @@ const Home: React.FC = () => {
             />
           </div>
         </AwesomeSlider>
+      </section>
+
+      {/* Footer */}
+      <section className="w-full">
+        <Footer />
       </section>
     </div>
   );
