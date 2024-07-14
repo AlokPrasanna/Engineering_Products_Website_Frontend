@@ -17,22 +17,29 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ src, alt, title, description 
   };
 
   return (
-    <div className="w-full p-4 bg-white border rounded-lg shadow-lg">
+    <div className="
+        w-[30%] h-auto p-4 bg-[#d2d0dc] 
+        flex flex-col items-center justify-center 
+        border rounded-lg shadow-lg overflow-hidden
+        transition-transform duration-500 hover:scale-105
+        ">
       <img 
         src={src} 
         alt={alt} 
-        className="object-cover w-full h-48 rounded-md" 
+        className="w-[100px] h-auto" 
       />
-      <h2 className="mt-4 text-2xl font-bold">{title}</h2>
+      <h2 className="mt-4 text-[16px] font-bold text-center">{title}</h2>
       <button 
         onClick={toggleDescription} 
         className="mt-2 text-blue-500 hover:text-blue-700 focus:outline-none"
       >
         {isDescriptionVisible ? 'Hide Description' : 'Show Description'}
       </button>
-      {isDescriptionVisible && (
-        <p className="mt-4 text-gray-700">{description}</p>
-      )}
+      <div 
+        className={`transition-max-height duration-500 ease-in-out overflow-hidden ${isDescriptionVisible ? 'max-h-96' : 'max-h-0'}`}
+      >
+        <p className="mt-4 text-gray-700 break-words">{description}</p>
+      </div>
     </div>
   );
 }

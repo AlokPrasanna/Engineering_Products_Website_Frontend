@@ -6,6 +6,7 @@ import { Images } from "../../constant";
 import { 
   HomeTitleCard, 
   LatestInovationCard, 
+  ServiceCard, 
   WelcomeCard,
 } from "../../components/molecules";
 
@@ -117,15 +118,21 @@ const Home: React.FC = () => {
           organicArrows={false}
           infinite={true}
         >
-          <div>
+          <div
+            className="h-full w-[80%] bg-cover"
+            style={{ backgroundImage: `url(${Images.inovationBg})` }}
+          >
             <LatestInovationCard
              src={Images.latest1}
              alt="Latest Device 1"
-             title="Electronic Instrumentation Suit (ELS)" 
+             title="Electronic Instrumentation Suit" 
              discription="17 Electronic instruments in a single device for electronic laboratories"
             />
           </div>
-          <div>
+          <div
+            className="h-full w-[80%] bg-cover"
+            style={{ backgroundImage: `url(${Images.inovationBg})` }}
+          >
             <LatestInovationCard
              src={Images.latest2}
              alt="Latest Device 2"
@@ -133,7 +140,10 @@ const Home: React.FC = () => {
              discription="Industrial indicators with multifunctional and multi color smart display"
             />
           </div>
-          <div>
+          <div
+            className="h-full bg-center bg-cover w-fit"
+            style={{ backgroundImage: `url(${Images.inovationBg})` }}
+          >
             <LatestInovationCard
              src={Images.latest3}
              alt="Latest Device 3"
@@ -149,6 +159,76 @@ const Home: React.FC = () => {
         <div className="mb-5">
           <h1 className="text-4xl font-bold">Our Services</h1>
         </div>
+        <AwesomeSlider
+          className="w-full h-[75vh] mt-1"
+          animation="foldOutAnimation"
+          bullets={true}
+          organicArrows={false}
+          infinite={true}
+        >
+          <div className="flex justify-center gap-5">
+            <ServiceCard 
+              src={Images.service1}
+              alt="Service 1"
+              title="Design and Manufacturing of Educational Equipment"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+            <ServiceCard 
+              src={Images.service2}
+              alt="Service 2"
+              title="Smart Building Automation Systems"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+            <ServiceCard 
+              src={Images.service3}
+              alt="Service 3"
+              title="Mechatronic Systems"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+          </div>
+          <div className="flex justify-center gap-5">
+            <ServiceCard 
+              src={Images.service4}
+              alt="Service 4"
+              title="Industrial Automation Solutions"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+            <ServiceCard 
+              src={Images.service5}
+              alt="Service 5"
+              title="Industrial Control and Instrumentations"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+            <ServiceCard 
+              src={Images.service6}
+              alt="Service 6"
+              title="Research Instrumentation and Equipment"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+          </div>
+          <div className="flex justify-center gap-5">
+            <ServiceCard 
+              src={Images.service7}
+              alt="Service 7"
+              title="System Installation Training"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+            <ServiceCard 
+              src={Images.service8}
+              alt="Service 8"
+              title="After Sales Services"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
+            />
+          </div>
+        </AwesomeSlider>
       </section>
     </div>
   );

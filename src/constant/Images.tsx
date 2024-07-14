@@ -9,6 +9,7 @@ const Images = {
     automation:"/Images/automation.jpg",
     education:"/Images/education.jpg",
     research:"/Images/research.jpg",
+    inovationBg:"/Images/inovation-bg.jpg",
     latest1:"/Images/17-single.png",
     latest2:"/Images/process-view.png",
     latest3:"/Images/flx-cs100.png",
