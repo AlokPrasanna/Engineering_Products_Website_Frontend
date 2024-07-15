@@ -3,6 +3,7 @@ const Images = {
     logo:"/Images/logo.png",
     homeTitle:"/Images/home-title.jpg",
     titleLoo:"/Images/title-logo.jpg",
+    servicesBg:"/Images/services-bg.jpg",
     device1:"/Images/device1.png",
     device2:"/Images/device2.png",
     device4:"/Images/device4.png",

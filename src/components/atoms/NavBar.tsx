@@ -11,17 +11,17 @@ const NavBar: React.FC<NavBarProps> = ({ list, showContactButton }) => {
   const [NavBarOpen, setNavBarOpen] = useState<boolean>(false);
 
   return (
-    <div className='w-full relative'>
+    <div className='relative w-full'>
       <nav className='flex flex-wrap items-center justify-between p-4'>
-        <div className='mobile-menu block md:hidden'>
+        <div className='block mobile-menu md:hidden'>
           <button onClick={() => setNavBarOpen(!NavBarOpen)} className=''>
             {NavBarOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="currentColor" className="w-6 h-6 fixed top-[2%] right-5 z-50 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="currentColor" className="w-6 h-6 fixed top-[2%] right-5 z-50 text-slate-50">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="currentColor" className="w-6 h-6 top-[5%] right-5  fixed z-50">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="4" stroke="currentColor" className="w-6 h-6 top-[5%] right-5  fixed z-50 text-[#27224d]">
+                <path fill='' strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             )}
           </button>

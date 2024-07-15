@@ -11,8 +11,8 @@ import { Route, Routes } from 'react-router-dom'
 
 const App:React.FC = () => {
   return (
-    <div className='w-full h-full flex-col' >
-      <div className=''>
+    <div className='flex-col w-full h-full' >
+      <div className='sticky top-0 z-50'>
         <Header />
       </div>
       <main>

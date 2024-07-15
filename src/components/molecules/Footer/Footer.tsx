@@ -9,7 +9,7 @@ const Footer:React.FC = () => {
         document.documentElement.style.setProperty('--image-Url', `url(${ImageUrl})`);
     }, [ImageUrl]);
   return (
-    <div className='mt-[20px] w-full relative min-h-32 py-[5px] px-[20px] bg-[#7E79A4]'>
+    <div className='mt-[20px] w-full relative min-h-32 py-[5px] px-[20px] bg-[#22274d]'>
         <footer>
             <div className='waves'>
                 <div className='wave' id='wave1'></div>
@@ -34,13 +34,13 @@ const Footer:React.FC = () => {
                     </svg>
                 </li>
             </ul>
-            <ul className='flex items-center justify-center gap-5 px-5 py-4 mt-2 text-slate-50'>
-                <li className='cursor-pointer font-semibold hover:text-[#27224d]'>Home</li>
-                <li className='cursor-pointer font-semibold hover:text-[#27224d]'>Control and Automation</li>
-                <li className='cursor-pointer font-semibold hover:text-[#27224d]'>Technology for Education</li>
-                <li className='cursor-pointer font-semibold hover:text-[#27224d]'>Research Instrumentation</li>
-                <li className='cursor-pointer font-semibold hover:text-[#27224d]'>About</li>
-                <li className='cursor-pointer font-semibold hover:text-[#27224d]'>Contact</li>
+            <ul className='items-center justify-center gap-5 px-5 py-4 mt-2 md:flex text-slate-50'>
+                <li className='cursor-pointer text-center font-semibold hover:text-[#d2d0dc] transition-transform duration-300 hover:scale-110'>Home</li>
+                <li className='cursor-pointer text-center font-semibold hover:text-[#d2d0dc] transition-transform duration-300 hover:scale-110'>Control and Automation</li>
+                <li className='cursor-pointer text-center font-semibold hover:text-[#d2d0dc] transition-transform duration-300 hover:scale-110'>Technology for Education</li>
+                <li className='cursor-pointer text-center font-semibold hover:text-[#d2d0dc] transition-transform duration-300 hover:scale-110'>Research Instrumentation</li>
+                <li className='cursor-pointer text-center font-semibold hover:text-[#d2d0dc] transition-transform duration-300 hover:scale-110'>About</li>
+                <li className='cursor-pointer text-center font-semibold hover:text-[#d2d0dc] transition-transform duration-300 hover:scale-110'>Contact</li>
             </ul>
             <span className='text-slate-50 font-semibold text-[16px] text-center flex justify-center mb-2'>&copy;2024 All Right  Reserved</span>
         </footer>

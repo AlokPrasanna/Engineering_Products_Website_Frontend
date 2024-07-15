@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ src, alt, title, description 
 
   return (
     <div className="
-        w-[30%] h-auto p-4 bg-[#d2d0dc] 
+        w-[30%] h-[45vh] p-4 bg-[#d2d0dc] 
         flex flex-col items-center justify-center 
         border rounded-lg shadow-lg overflow-hidden
         transition-transform duration-500 hover:scale-105
@@ -26,9 +26,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ src, alt, title, description 
       <img 
         src={src} 
         alt={alt} 
-        className="w-[100px] h-auto" 
+        className="w-[150px] h-auto" 
       />
-      <h2 className="mt-4 text-[16px] font-bold text-center">{title}</h2>
+      <h2 className="mt-4 text-xl font-bold text-center">{title}</h2>
       <button 
         onClick={toggleDescription} 
         className="mt-2 text-blue-500 hover:text-blue-700 focus:outline-none"

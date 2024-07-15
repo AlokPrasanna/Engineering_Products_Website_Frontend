@@ -5,7 +5,7 @@ import { Images } from '../../../constant';
 
 const Header: React.FC = () => {
   return (
-    <div className='flex w-full h-[100px] px-[25px] py- justify-between items-center bg-[#d2d0dc]'>
+    <div className='flex w-full h-[100px] px-[25px] justify-between items-center bg-[#d2d0dc]'>
       <div className='flex items-center gap-10'>
         <Image 
           src={Images.logo} 

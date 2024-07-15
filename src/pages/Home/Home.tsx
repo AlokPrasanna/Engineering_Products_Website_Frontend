@@ -51,14 +51,18 @@ const Home: React.FC = () => {
       {/* Header Section */}
       <section className="w-full bg-[#d2d0dc]">
         <AwesomeSlider
-          className="w-full h-[75vh] bg-none"
+          className="w-full lg:h-[75vh] bg-none md:h-[50vh] sm:h-[40vh]"
           animation="cubeAnimation"
           bullets={true}
           infinite={true}
         >
           <div 
-            className="h-full w-[80%] bg-cover"
-            style={{ backgroundImage: `url(${Images.homeTitle})` }}
+            className="h-full w-[80%] md:w-[80%] sm:w-full"
+            style={{ 
+              backgroundImage: `url(${Images.homeTitle})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
           >
             <HomeTitleCard 
               title="Electronic Instrumentation Suite"
@@ -69,7 +73,11 @@ const Home: React.FC = () => {
           </div>
           <div 
             className="h-full w-[80%] bg-cover"
-            style={{ backgroundImage: `url(${Images.homeTitle})` }}
+            style={{ 
+              backgroundImage: `url(${Images.homeTitle})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
           >
             <HomeTitleCard 
               title="FLX CS100"
@@ -80,7 +88,11 @@ const Home: React.FC = () => {
           </div>
           <div 
             className="h-full w-[80%] bg-cover"
-            style={{ backgroundImage: `url(${Images.homeTitle})` }}
+            style={{ 
+              backgroundImage: `url(${Images.homeTitle})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
           >
             <HomeTitleCard 
               title="Process View"
@@ -91,7 +103,11 @@ const Home: React.FC = () => {
           </div>
           <div 
             className="h-full w-[80%] bg-cover"
-            style={{ backgroundImage: `url(${Images.homeTitle})` }}
+            style={{ 
+              backgroundImage: `url(${Images.homeTitle})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
           >
             <HomeTitleCard 
               title="FLX MC20"
@@ -139,7 +155,7 @@ const Home: React.FC = () => {
       {/* Latest Products */}
       <section className="flex flex-col items-center justify-center mb-[80px]">
         <div className="mb-5">
-          <h1 className="text-4xl font-bold">Our Latest Inovations</h1>
+          <h1 className="text-xl font-bold md:text-4xl">Our Latest Inovations</h1>
         </div>
         <AwesomeSlider
           className="w-full h-[75vh] mt-1"
@@ -150,7 +166,11 @@ const Home: React.FC = () => {
         >
           <div
             className="h-full w-[80%] bg-cover"
-            style={{ backgroundImage: `url(${Images.inovationBg})` }}
+            style={{ 
+              backgroundImage: `url(${Images.inovationBg})`,  
+              backgroundSize: 'cover',
+              backgroundPosition: 'center', 
+            }}
           >
             <LatestInovationCard
              src={Images.latest1}
@@ -161,7 +181,11 @@ const Home: React.FC = () => {
           </div>
           <div
             className="h-full w-[80%] bg-cover"
-            style={{ backgroundImage: `url(${Images.inovationBg})` }}
+            style={{ 
+              backgroundImage: `url(${Images.inovationBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
           >
             <LatestInovationCard
              src={Images.latest2}
@@ -172,7 +196,11 @@ const Home: React.FC = () => {
           </div>
           <div
             className="h-full bg-center bg-cover w-fit"
-            style={{ backgroundImage: `url(${Images.inovationBg})` }}
+            style={{ 
+              backgroundImage: `url(${Images.inovationBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center', 
+            }}
           >
             <LatestInovationCard
              src={Images.latest3}
@@ -187,7 +215,7 @@ const Home: React.FC = () => {
       {/* Our servises */}
       <section className="flex flex-col items-center justify-center">
         <div className="mb-5">
-          <h1 className="text-4xl font-bold">Our Services</h1>
+          <h1 className="text-xl font-bold md:text-4xl">Our Services</h1>
         </div>
         <AwesomeSlider
           className="w-full h-[75vh] mt-1"
@@ -196,7 +224,14 @@ const Home: React.FC = () => {
           organicArrows={false}
           infinite={true}
         >
-          <div className="flex justify-center gap-5">
+          <div 
+            className="flex justify-center gap-5"
+            style={{ 
+              backgroundImage: `url(${Images.servicesBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
+          >
             <ServiceCard 
               src={Images.service1}
               alt="Service 1"
@@ -219,7 +254,14 @@ const Home: React.FC = () => {
               Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
             />
           </div>
-          <div className="flex justify-center gap-5">
+          <div 
+            className="flex justify-center gap-5"
+            style={{ 
+              backgroundImage: `url(${Images.servicesBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
+          >
             <ServiceCard 
               src={Images.service4}
               alt="Service 4"
@@ -242,7 +284,14 @@ const Home: React.FC = () => {
               Modi architecto iste asperiores porro enim explicabo harum sunt reiciendis necessitatibus maxime."
             />
           </div>
-          <div className="flex justify-center gap-5">
+          <div 
+            className="flex justify-center gap-5"
+            style={{ 
+              backgroundImage: `url(${Images.servicesBg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',  
+            }}
+          >
             <ServiceCard 
               src={Images.service7}
               alt="Service 7"
@@ -262,22 +311,24 @@ const Home: React.FC = () => {
       </section>
 
       {/* Our Technologies */}
+      <div className="flex flex-col items-center justify-center mt-[80px]">
+        <div className="mb-5">
+          <h1 className="text-xl font-bold md:text-4xl">Our Technologies</h1>
+        </div>
+      </div>
       <motion.section
-        className="flex flex-col items-center justify-center mt-[80px] mb-24"
+        className="flex flex-col items-center justify-center mb-24"
         ref={ref}
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={sectionVariants}
       >
-        <div className="mb-5">
-          <h1 className="text-4xl font-bold">Our Technologies</h1>
-        </div>
-        <div className="grid items-center justify-center grid-cols-4 gap-5 px-10 mb-[100px] mt-5">
-          <div className="col-span-2">
+        <div className="grid items-center justify-center grid-cols-1 md:grid-cols-2 md:gap-5 gap-0 px-5 md:px-10 mb-24 mt-5 w-[90%] md:w-[65%]">
+          <div className="col-span-1 md:col-span-1">
             {["Research and development", "Electronic fabrications", "Firmware development"].map((text, index) => (
               <motion.p
                 key={text}
-                className="px-10 py-3 mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
+                className="md:px-10 px-2 text-center py-3 md:text-lg text-[13px] mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
                 custom={index}
                 variants={paragraphVariants}
               >
@@ -285,11 +336,11 @@ const Home: React.FC = () => {
               </motion.p>
             ))}
           </div>
-          <div className="col-span-2">
-            {["Software developments", "Electro-mechanical system developments", "In house manufacturing"].map((text, index) => (
+          <div className="col-span-1 md:col-span-1">
+            {["Software developments", "In house manufacturing" ,"Electro-mechanical system developments"].map((text, index) => (
               <motion.p
                 key={text}
-                className="px-10 py-3 mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
+                className="md:px-10 px-2 text-center py-3 md:text-lg text-[13px] mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
                 custom={index + 3}
                 variants={paragraphVariants}
               >
