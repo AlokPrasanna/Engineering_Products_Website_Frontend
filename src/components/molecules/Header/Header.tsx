@@ -16,7 +16,13 @@ const Header: React.FC = () => {
           '
         />
         <NavBar 
-          list={["Home","Control and Automation" , "Technology for Education" , "Research Instrumentation" , "About"]}
+          list={[
+            {title:"Home",path:"/"},
+            {title:"Control and Automation" , path:"/"}, 
+            {title:"Technology for Education" , path:"/"}, 
+            {title:"Research Instrumentation" , path:"/"}, 
+            {title:"About" , path:"/"}
+          ]}
           showContactButton={true}
         />
       </div>

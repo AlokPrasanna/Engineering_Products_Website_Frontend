@@ -1,9 +1,10 @@
 // -------------------- Imports --------------------
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // ---------- Interface ----------
 interface NavBarProps {
-  list: Array<string>;
+  list: Array<{title:string , path:string}>;
   showContactButton?: boolean;
 }
 
@@ -60,7 +61,7 @@ const NavBar: React.FC<NavBarProps> = ({ list, showContactButton }) => {
                          md:before:transition-all md:before:duration-500 md:before:ease-in-out
                          md:hover:before:left-0 md:hover:before:w-full cursor-pointer'
             >
-              {l}
+              <Link to={l.path}>{l.title}</Link>
             </li>
           ))}
           {showContactButton && (
