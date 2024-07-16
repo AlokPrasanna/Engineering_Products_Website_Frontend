@@ -2,6 +2,7 @@
 import React from 'react'
 import { 
   Home,
+  ProductSimulation,
   ProductView,
 } from './pages'
 import { 
@@ -20,6 +21,7 @@ const App:React.FC = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/product-view' element={<ProductView />} />
+          <Route path='/product-simulation' element={<ProductSimulation />} />
         </Routes>
       </main>
     </div>
