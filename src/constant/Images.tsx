@@ -22,6 +22,8 @@ const Images = {
     service6:"/Images/6rie.png",
     service7:"/Images/7sit.png",
     service8:"/Images/8ass.png",
+    simulationHeader:"/Images/simulation-header.jpg",
+    laptop:"/Images/lap.jpg",
     footer:"/Images/footer.png",
 }
 
