@@ -35,7 +35,7 @@ const ImageSlider:React.FC<ImageSliderProps> = ({ data }) => {
     // }
   return (
     <div className='flex flex-col items-center justify-center mt-5'>
-        <div className={`lg:w-[500px] lg:h-[500px] flex items-center justify-center p-5 ${animate ? 'animation' : ''}`}>        
+        <div className={`lg:w-[500px] lg:h-[500px] w-[250px] h-[250px] flex items-center justify-center p-5 ${animate ? 'animation' : ''}`}>        
             <img src={data[currentIndex].src} alt={data[currentIndex].alt} className="max-w-full max-h-full" />                   
         </div>
         <div className='flex items-center justify-center mt-4 mb-5'>
