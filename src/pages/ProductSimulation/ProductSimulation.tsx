@@ -1,7 +1,7 @@
 // -------------------- Imports --------------------
 import React from 'react';
 import { Images } from '../../constant';
-import { KeyslightCard } from '../../components/molecules';
+import { FlexceptCard } from '../../components/molecules';
 
 const ProductSimulation: React.FC = () => {
   return (
@@ -59,28 +59,28 @@ const ProductSimulation: React.FC = () => {
             <hr className='h-[1px]' />
         </div>
         <div className='flex items-center justify-center gap-5'>
-          <KeyslightCard 
+          <FlexceptCard 
             src={Images.laptop}
             alt='Laptop'
             title='Advance Design System (ADS)'
             discription='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati dolor corporis harum? 
                 Quod repudiandae voluptatem explicabo possimus accusamus ad quia '
           />
-          <KeyslightCard 
+          <FlexceptCard 
             src={Images.laptop}
             alt='Laptop'
             title='Advance Design System (ADS)'
             discription='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati dolor corporis harum? 
                 Quod repudiandae voluptatem explicabo possimus accusamus ad quia '
           />
-          <KeyslightCard 
+          <FlexceptCard 
             src={Images.laptop}
             alt='Laptop'
             title='Advance Design System (ADS)'
             discription='Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati dolor corporis harum? 
                 Quod repudiandae voluptatem explicabo possimus accusamus ad quia '
           />
-          <KeyslightCard 
+          <FlexceptCard 
             src={Images.laptop}
             alt='Laptop'
             title='Advance Design System (ADS)'

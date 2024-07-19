@@ -2,14 +2,14 @@
 import React, { useState } from 'react'
 
 // ---------- Interface ----------
-interface KeyslightCardProps {
+interface FlexceptCardProps {
     title:string;
     discription:string;
     src:string;
     alt:string;
 }
 
-const KeyslightCard:React.FC<KeyslightCardProps> = ({ title , discription , src , alt }) => {
+const FlexceptCard:React.FC<FlexceptCardProps> = ({ title , discription , src , alt }) => {
     const [hover , setHover] = useState<boolean>(false);
   return (
     <div 
@@ -28,4 +28,4 @@ const KeyslightCard:React.FC<KeyslightCardProps> = ({ title , discription , src 
   )
 }
 
-export default KeyslightCard
+export default FlexceptCard
