@@ -1,8 +1,11 @@
 // -------------------- Imports --------------------
 import React from 'react';
 import { Images, Videos } from '../../constant';
-import { FlexceptCard } from '../../components/molecules';
+import { FlexceptCard, ReviewCard } from '../../components/molecules';
 import "./productSimulation.css"
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
 
 const ProductSimulation: React.FC = () => {
   return (
@@ -112,6 +115,68 @@ const ProductSimulation: React.FC = () => {
             </button>
           </div>
         </div>
+      </section>
+
+      {/* Reviews */}
+      <section className='mt-0 mb-[80px]'>
+        <AwesomeSlider
+          className='h-[65vh] w-full'
+          animation="fall"
+          bullets={true}
+          organicArrows={true}
+        >
+          <div
+            className='h-full mt-[150px]'
+            style={{
+              backgroundImage:`url(${Images.userReviews})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center', 
+            }}
+          >
+            <ReviewCard
+              name='Dr. Sadayuki Yoshitomi'
+              position='Kioxia Corporation'
+              comment=' We have a way to collect a huge amount of S-parameter 
+                        data which helps us to select the golden die of the AC performance. 
+                        It is very helpful to have a very accurate SPICE model for high-speed circuit design.'
+              url="/"
+            />
+            </div>
+            <div
+            className='h-full mt-[150px]'
+            style={{
+              backgroundImage:`url(${Images.userReviews})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center', 
+            }}
+          >
+            <ReviewCard
+              name='Amit Singh'
+              position='Technical Staff Nokia Bell Labs'
+              comment=' I used GoldenGate day-in and day-out for all of my W-band mmWave circuit and system-level 
+                        simulations to do system-level linearity, noise figure, 
+                        and other characterizations across the frequency ranges.'
+              url="/"
+            />
+            </div>
+            <div
+            className='h-full mt-[150px]'
+            style={{
+              backgroundImage:`url(${Images.userReviews})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center', 
+            }}
+          >
+            <ReviewCard
+              name='David Brown'
+              position='Systems Integration Engineer Analog Devices'
+              comment=' A full-up workspace in PathWave System Design 
+                        with our Sys-Parameters models speeds everything up. 
+                        Its a step beyond anything we have seen out there for RF system reference designs.'
+              url="/"
+            />
+            </div>
+        </AwesomeSlider>
       </section>
     </div>
   )

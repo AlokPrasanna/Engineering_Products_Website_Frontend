@@ -6,6 +6,7 @@ import LatestInovationCard from "./LatestInovationCard/LatestInovationCard";
 import ServiceCard from "./ServicesCard/ServicesCard";
 import ImageSlider from "./ImageSlider/ImageSlider";
 import FlexceptCard from "./FlexceptCard/FlexceptCard";
+import ReviewCard from "./ReviewCard/ReviewCard";
 import Footer from "./Footer/Footer";
 
 // -------------------- Exports --------------------
@@ -17,5 +18,6 @@ export {
     ServiceCard,
     ImageSlider,
     FlexceptCard,
+    ReviewCard,
     Footer,
 }
