@@ -29,6 +29,11 @@ const Images = {
     found2:"/Images/fund2.jpg",
     found3:"/Images/fund3.jpg",
     found4:"/Images/fund4.jpg",
+    protectYou:"/Images/protectInvestment.jpg",
+    p1:"/Images/p1.png",
+    p2:"/Images/p2.png",
+    p3:"/Images/p3.png",
+    p4:"/Images/p4.png",
     footer:"/Images/footer.png",
 }
 

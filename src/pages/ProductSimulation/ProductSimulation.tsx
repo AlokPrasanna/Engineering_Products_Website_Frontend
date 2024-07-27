@@ -1,7 +1,7 @@
 // -------------------- Imports --------------------
 import React from 'react';
 import { Images, Videos } from '../../constant';
-import { FlexceptCard, ReviewCard } from '../../components/molecules';
+import { FlexceptCard, ProtectInovationCard, ReviewCard } from '../../components/molecules';
 import "./productSimulation.css"
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -181,7 +181,7 @@ const ProductSimulation: React.FC = () => {
       </section>
 
       {/* Foundary process design */}
-      <section className='bg-[#D2D0DC] mt-0 mb-[80px] w-full flex items-center justify-center'>
+      <section className='bg-[#D2D0DC] mt-0 pt-[50px] pb-[50px] w-full flex items-center justify-center'>
         <div className='p-10 flex items-center justify-center gap-5 w-[80%]'>
           <div className='w-full'>
             <h1 className='text-xl font-bold'>Foundry Process Design</h1>
@@ -204,6 +204,47 @@ const ProductSimulation: React.FC = () => {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Inivation Investment */}
+      <section 
+        className=' flex items-center justify-center w-full mb-[80px] h-[80vh]' 
+        style={{
+          backgroundImage: `url(${Images.protectYou})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center', 
+        }}
+      >
+        <div className='flex items-center justify-center gap-[30px] w-[80%]'>
+          <ProtectInovationCard 
+            src={Images.p1}
+            alt='Protect Inovarion Picture1'
+            title='FLEXCEPTCare'
+            discription='Receive priority updates and enhancements, 
+            faster response times, and expert support.'
+          />
+          <ProtectInovationCard 
+            src={Images.p2}
+            alt='Protect Inovarion Picture2'
+            title='Software Licensing'
+            discription='Choose your terms, choose your type, and keep control 
+            of your budget for flexibility and support.'
+          />
+          <ProtectInovationCard 
+            src={Images.p3}
+            alt='Protect Inovarion Picture3'
+            title='Software Manager'
+            discription='Manage your Flexcept software, view and request licenses, 
+            and access the latest updates.'
+          />
+          <ProtectInovationCard 
+            src={Images.p4}
+            alt='Protect Inovarion Picture4'
+            title='Enterprise Agreement'
+            discription='Access Flexcept software portfolio with ease. 
+            Remix your license pool for cost-effective flexibility.'
+          />
         </div>
       </section>
     </div>
