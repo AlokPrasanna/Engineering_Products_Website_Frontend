@@ -1,11 +1,12 @@
 // -------------------- Imports --------------------
 import React from 'react';
 import { Images, Videos } from '../../constant';
-import { FlexceptCard, ProtectInovationCard, ReviewCard } from '../../components/molecules';
+import { FAQCard, FlexceptCard, Footer, ProtectInovationCard, ReviewCard } from '../../components/molecules';
 import "./productSimulation.css"
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
+import { Link } from 'react-router-dom';
 
 const ProductSimulation: React.FC = () => {
   const foundaryImages = [Images.found1 , Images.found2 , Images.found3 , Images.found4];
@@ -209,43 +210,94 @@ const ProductSimulation: React.FC = () => {
 
       {/* Inivation Investment */}
       <section 
-        className=' flex items-center justify-center w-full mb-[80px] h-[80vh]' 
+        className=' flex flex-col items-center justify-start w-full mb-[80px] h-[85vh]' 
         style={{
           backgroundImage: `url(${Images.protectYou})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center', 
         }}
       >
-        <div className='flex items-center justify-center gap-[30px] w-[80%]'>
-          <ProtectInovationCard 
-            src={Images.p1}
-            alt='Protect Inovarion Picture1'
-            title='FLEXCEPTCare'
-            discription='Receive priority updates and enhancements, 
-            faster response times, and expert support.'
+        <h1 className='text-4xl text-slate-50 font-bold text-center mt-[6%] mb-[50px]'>Protect Your Innovation Investment</h1>
+          <div className='flex items-center justify-center gap-[30px] w-[80%]'>
+            <ProtectInovationCard 
+              src={Images.p1}
+              alt='Protect Inovarion Picture1'
+              title='FLEXCEPTCare'
+              discription='Receive priority updates and enhancements, 
+              faster response times, and expert support.'
+            />
+            <ProtectInovationCard 
+              src={Images.p2}
+              alt='Protect Inovarion Picture2'
+              title='Software Licensing'
+              discription='Choose your terms, choose your type, and keep control 
+              of your budget for flexibility and support.'
+            />
+            <ProtectInovationCard 
+              src={Images.p3}
+              alt='Protect Inovarion Picture3'
+              title='Software Manager'
+              discription='Manage your Flexcept software, view and request licenses, 
+              and access the latest updates.'
+            />
+            <ProtectInovationCard 
+              src={Images.p4}
+              alt='Protect Inovarion Picture4'
+              title='Enterprise Agreement'
+              discription='Access Flexcept software portfolio with ease. 
+              Remix your license pool for cost-effective flexibility.'
+            />
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions */}
+      <section className='flex flex-col items-center justify-center mb-[80px] w-full'>
+        <h1 className='text-4xl font-bold text-center'>Frequently Asked Questions</h1>
+        <div className='w-[70%] mt-10'>
+          <FAQCard 
+            question='What is electronic design automation software?'
+            answer='Electronic design automation (EDA) is a Computer-Aided Design (CAD) category 
+                    of software tools for designing electronic circuits and systems. 
+                    The tools work together in a specific design flow for the physical design of chips, packages, and boards.'
           />
-          <ProtectInovationCard 
-            src={Images.p2}
-            alt='Protect Inovarion Picture2'
-            title='Software Licensing'
-            discription='Choose your terms, choose your type, and keep control 
-            of your budget for flexibility and support.'
+           <FAQCard 
+            question='What is different types of software?'
+            answer='EDA software can perform individual device characterization, and the electrical design of 
+                    the interconnects between active electronics from the component to the system level.'
           />
-          <ProtectInovationCard 
-            src={Images.p3}
-            alt='Protect Inovarion Picture3'
-            title='Software Manager'
-            discription='Manage your Flexcept software, view and request licenses, 
-            and access the latest updates.'
+           <FAQCard 
+            question='What are the different functions of software?'
+            answer='Virtual prototyping involves building a soft equivalent of a design before investing in hardware prototyping. 
+                    Statistical studies examine how a design behaves under many operating conditions. 
+                    Product variations could include high volume or temperature, voltages, and signal environments. 
+                    Yield analysis examines building the design in single quantities or mass production.'
           />
-          <ProtectInovationCard 
-            src={Images.p4}
-            alt='Protect Inovarion Picture4'
-            title='Enterprise Agreement'
-            discription='Access Flexcept software portfolio with ease. 
-            Remix your license pool for cost-effective flexibility.'
+           <FAQCard 
+            question='What re the different types of simmulations supported tools?'
+            answer='The principal simulation is circuit simulation, which can be performed in both time and frequency domains. 
+                    A range of additional tools can help optimize a design. Statistical analyses perform optimization and parameter sweeps to improve aspects of a circuit. 
+                    Electrothermal analysis relates heat impacts to a circuits electrical characteristics. 
+                    Electromagnetic analysis describes the electromagnetic effects on a circuits electrical characteristics.'
+          />
+           <FAQCard 
+            question='What are the advantages does FLEXCEPT gain from beging part of the world largest test and measurement compant?'
+            answer='FLEXCEPT infuses our robust, accurate, easy-to-use design and validation 
+            solutions with advanced simulation techniques and critical measurement science know-how from 
+            over 80 years of test industry experience. For example, shared technology between simulation and 
+            test eliminates discrepancies and delays when matching results from complex multi-technology RF modules for 5G, automotive radar, and aerospace applications.'
           />
         </div>
+      </section>
+
+      {/* Help and contact */}
+      <section className='flex flex-col items-center justify-center bg-[#D2D0DC] p-20 mb-[80px]'>
+        <h1 className='text-2xl text-semibold'>Want to help or have questions?</h1>
+        <button className='mt-5 w-[20%] px-5 py-4 bg-red-600 text-slate-50 transition-colors duration-300 hover:bg-red-500'><Link to="/">Contact Us</Link></button>
+      </section>
+
+      {/* Footer */}
+      <section className='mt-[250px]'>
+        <Footer />
       </section>
     </div>
   )
