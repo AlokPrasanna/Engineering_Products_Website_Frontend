@@ -8,6 +8,7 @@ import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
 
 const ProductSimulation: React.FC = () => {
+  const foundaryImages = [Images.found1 , Images.found2 , Images.found3 , Images.found4];
   return (
     <div>
       {/* Header */}
@@ -177,6 +178,33 @@ const ProductSimulation: React.FC = () => {
             />
             </div>
         </AwesomeSlider>
+      </section>
+
+      {/* Foundary process design */}
+      <section className='bg-[#D2D0DC] mt-0 mb-[80px] w-full flex items-center justify-center'>
+        <div className='p-10 flex items-center justify-center gap-5 w-[80%]'>
+          <div className='w-full'>
+            <h1 className='text-xl font-bold'>Foundry Process Design</h1>
+            <p className='text-sm'>Integrated circuit (IC) foundries offer semiconductor processes that use PDKs 
+              containing active and passive device simulation models for IC design. 
+              Keysight EDA tools work closely with foundries to offer high-frequency 
+              PDKs in Si, SiGe, GaAs, InP, and GaN processes.</p>
+            <p className='text-sm mt-3'>When choosing a foundry PDK, you must be sure that the models meet foundry 
+              manufacturing requirements. Foundries validate and distribute all PDKs 
+              provided for Keysight simulators, guaranteeing that the models behave optimally 
+              for first-pass design success.</p>
+            <button className='mt-5 px-10 py-3 border-2 border-red-600 hover:bg-red-600 hover:text-slate-50 transition-colors duration-300'>Learn More</button>
+          </div>
+          <div className='w-full flex flex-row flex-wrap items-center justify-center gap-5'>
+            {foundaryImages.length > 0 && foundaryImages.map((imag , index) => (
+              <img 
+                src={imag} 
+                alt={`foundaryImage${index}`} 
+                className='max-w-[150px] min-w-12 hover:scale-110 transition-transform duration-300' 
+              />
+            ))}
+          </div>
+        </div>
       </section>
     </div>
   )

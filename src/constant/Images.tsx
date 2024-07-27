@@ -25,6 +25,10 @@ const Images = {
     simulationHeader:"/Images/simulation-header.jpg",
     laptop:"/Images/lap.png",
     userReviews:"/Images/userReviews.jpg",
+    found1:"/Images/fund1.jpg",
+    found2:"/Images/fund2.jpg",
+    found3:"/Images/fund3.jpg",
+    found4:"/Images/fund4.jpg",
     footer:"/Images/footer.png",
 }
 
