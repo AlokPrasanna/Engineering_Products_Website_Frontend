@@ -1,3 +1,5 @@
+import { ContactUs } from "../pages";
+
 // -------------------- Imports --------------------
 const Images = {
     logo:"/Images/logo.png",
@@ -34,6 +36,7 @@ const Images = {
     p2:"/Images/p2.png",
     p3:"/Images/p3.png",
     p4:"/Images/p4.png",
+    contactUs:"/Images/contactus.jpg",
     footer:"/Images/footer.png",
 }
 

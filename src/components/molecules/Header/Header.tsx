@@ -2,6 +2,7 @@
 import React from 'react';
 import { Image, NavBar } from '../../atoms';
 import { Images } from '../../../constant';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
@@ -44,7 +45,7 @@ const Header: React.FC = () => {
               duration-500
             '
           >
-            Contact Us
+            <Link to="/contact">Contact Us</Link>
           </button>
         </div>
       </div>
