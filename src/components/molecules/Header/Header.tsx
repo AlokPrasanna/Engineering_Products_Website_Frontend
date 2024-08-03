@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             {title:"Control and Automation" , path:"/"}, 
             {title:"Technology for Education" , path:"/"}, 
             {title:"Research Instrumentation" , path:"/"}, 
-            {title:"About" , path:"/"}
+            {title:"About" , path:"/about"}
           ]}
           showContactButton={true}
         />

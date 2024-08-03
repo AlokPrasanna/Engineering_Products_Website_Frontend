@@ -1,6 +1,7 @@
 // -------------------- Imports --------------------
 import React from 'react'
 import { 
+  About,
   ContactUs,
   Home,
   ProductSimulation,
@@ -24,6 +25,7 @@ const App:React.FC = () => {
           <Route path='/product-view' element={<ProductView />} />
           <Route path='/product-simulation' element={<ProductSimulation />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/about' element={<About />} />
         </Routes>
       </main>
     </div>
