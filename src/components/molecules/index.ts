@@ -9,6 +9,7 @@ import FlexceptCard from "./FlexceptCard/FlexceptCard";
 import ReviewCard from "./ReviewCard/ReviewCard";
 import ProtectInovationCard from "./ProtectInovationCard/ProtectInovationCard";
 import FAQCard from "./FAQCard/FAQCard";
+import StepWayCard from "./StepWayCard/StepWayCard";
 import Footer from "./Footer/Footer";
 
 // -------------------- Exports --------------------
@@ -23,5 +24,6 @@ export {
     ReviewCard,
     ProtectInovationCard,
     FAQCard,
+    StepWayCard,
     Footer,
 }
