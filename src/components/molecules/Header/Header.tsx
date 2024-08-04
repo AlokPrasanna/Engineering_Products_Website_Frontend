@@ -19,9 +19,9 @@ const Header: React.FC = () => {
         <NavBar 
           list={[
             {title:"Home",path:"/"},
-            {title:"Control and Automation" , path:"/"}, 
-            {title:"Technology for Education" , path:"/"}, 
-            {title:"Research Instrumentation" , path:"/"}, 
+            {title:"Control and Automation" , path:"/contol-and-automation"}, 
+            {title:"Technology for Education" , path:"/technology-for-education"}, 
+            {title:"Research Instrumentation" , path:"/research-and-is-nstumentation"}, 
             {title:"About" , path:"/about"}
           ]}
           showContactButton={true}

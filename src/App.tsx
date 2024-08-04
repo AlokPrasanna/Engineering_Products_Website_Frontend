@@ -3,9 +3,12 @@ import React from 'react'
 import { 
   About,
   ContactUs,
+  ControlAndAutomation,
   Home,
   ProductSimulation,
   ProductView,
+  ReacherschAndInstumentation,
+  TechnologyForEducation,
 } from './pages'
 import { 
   Header, 
@@ -26,6 +29,9 @@ const App:React.FC = () => {
           <Route path='/product-simulation' element={<ProductSimulation />} />
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/about' element={<About />} />
+          <Route path='/research-and-is-nstumentation' element={<ReacherschAndInstumentation />} />
+          <Route path='/contol-and-automation' element={<ControlAndAutomation />} />
+          <Route path='/technology-for-education' element={<TechnologyForEducation />} />
         </Routes>
       </main>
     </div>
