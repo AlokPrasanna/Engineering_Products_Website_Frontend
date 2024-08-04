@@ -1,7 +1,7 @@
 // ----------- Imports ----------
 import React from 'react';
 import { Images , Videos } from '../../constant';
-import { Footer, StepWayCard } from '../../components/molecules';
+import { Footer, StepWayCard, WorkWithCard } from '../../components/molecules';
 import { Link } from 'react-router-dom';
 
 const About:React.FC = () => {
@@ -56,7 +56,7 @@ const About:React.FC = () => {
                 <p className='text-lg text-center'>Whether you are looking to improve your development process, optimize your network, or harness the power of AI and digital twins for a head start on tomorrow’s 
                 technologies, count on Keysight.</p>
             </div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center pb-10'>
                 <StepWayCard 
                     src={Images.automation}
                     alt='Automation'
@@ -74,6 +74,38 @@ const About:React.FC = () => {
                     alt='Research'
                     title='Manufacture and optimize'
                     discription='Optimize manufacturing, equipment performance, and training with software and services from Keysight.'
+                />
+            </div>
+        </section>
+
+        {/* Work with */}
+        <section className='flex flex-col items-center justify-center w-full mb-20'>
+            <div className='w-[60%]'>
+                <h1 className='px-5 pt-[60px] pb-10 text-4xl font-semibold text-center'>Flexcept serves as the global innovation partner
+                for high-growth industries</h1>
+                <p className='text-xl font-semibold text-center'>We Work With:</p>
+            </div>
+            <div className='flex items-center justify-center gap-10 w-[80%]'>
+                <WorkWithCard 
+                    src={Images.service2}
+                    alt='automation'
+                    total={10}
+                    value={9}
+                    title='Top automation companies'
+                />
+                <WorkWithCard 
+                    src={Images.service3}
+                    alt='semi conductor'
+                    total={10}
+                    value={6.5}
+                    title='Top semiconductor companies'
+                />
+                <WorkWithCard 
+                    src={Images.graduate}
+                    alt='graduation'
+                    total={10}
+                    value={8}
+                    title='Top engineering universities'
                 />
             </div>
         </section>

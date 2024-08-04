@@ -37,6 +37,7 @@ const Images = {
     p3:"/Images/p3.png",
     p4:"/Images/p4.png",
     contactUs:"/Images/contactus.jpg",
+    graduate:"/Images/graduate.png",
     about:"/Images/about.jpg",
     footer:"/Images/footer.png",
 }
