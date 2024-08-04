@@ -32,12 +32,12 @@ const ProductSimulation: React.FC = () => {
     </p>
   </div>
   <div className="absolute md:bottom-0 top-[100%] flex justify-center w-full h-60 md:h-20 bg-[#D2D0DC] text-slate-900">
-    <ul className="flex md:flex-wrap  flex-col items-center justify-center w-full">
-      <li className="px-4 py-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5 mx-2">EDA</li>
-      <li className="px-4 py-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5 mx-2">Circuit Design</li>
-      <li className="px-4 py-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5 mx-2">Physical Design</li>
-      <li className="px-4 py-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5 mx-2">System Design</li>
-      <li className="px-4 py-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5 mx-2">Device Modeling</li>
+    <ul className="flex flex-col items-center justify-center w-full md:flex-wrap">
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">EDA</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Circuit Design</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Physical Design</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">System Design</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Device Modeling</li>
     </ul>
   </div>
 </section>
@@ -45,8 +45,8 @@ const ProductSimulation: React.FC = () => {
 
       {/* Selected Simulation Part Discription */}
       <section className='flex items-center justify-center w-full bg-white md:mt-20 mt-[220px]'>
-          <div className='flex flex-col items-center justify-center text-center pt-12 pb-12'>
-            <h2 className='text-xl font-semibold px-5'>Model, Simulate, and Optimize with EDA Software</h2>
+          <div className='flex flex-col items-center justify-center pt-12 pb-12 text-center'>
+            <h2 className='px-5 text-xl font-semibold'>Model, Simulate, and Optimize with EDA Software</h2>
             <p className='w-[100%] md:w-[50%] px-2 mt-4 break-words text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati dolor corporis harum? 
                 Quod repudiandae voluptatem explicabo possimus accusamus ad quia 
                 molestias vero temporibus, neque porro sit. Hic, eligendi nihil officiis ex at 
@@ -56,8 +56,8 @@ const ProductSimulation: React.FC = () => {
 
       {/* Flexcept card */}
       <section className='flex flex-col items-center justify-center w-full bg-[#D2D0DC]'>
-        <div className='flex flex-col items-center justify-center md:pt-12 pt-8 pb-6'>
-            <h2 className='md:text-xl text-lg font-semibold'>Explore Flexcept EDA Software Suites</h2>
+        <div className='flex flex-col items-center justify-center pt-8 pb-6 md:pt-12'>
+            <h2 className='text-lg font-semibold md:text-xl'>Explore Flexcept EDA Software Suites</h2>
             <ul className='flex flex-col md:flex-row items-center justify-center md:h-[50px] h-auto mt-4 border-b-[1px] border-black'>
                 <li  className='px-10 ml-5 mr-5 py-[8px] text-[18px] font-semibold border-b-[4px] border-transparent cursor-pointer hover:border-b-orange-500'>Circuit Design</li>
                 <li className='px-10 ml-5 mr-5 py-[8px] text-[18px] font-semibold border-b-[4px] border-transparent cursor-pointer hover:border-b-orange-500'>Physical Design</li>
@@ -67,7 +67,7 @@ const ProductSimulation: React.FC = () => {
             </ul>
             {/* <hr className='custom-hr'/> */}
         </div>
-        <div className='flex flex-col md:flex-row items-center  justify-center gap-5'>
+        <div className='flex flex-col items-center justify-center gap-5 md:flex-row'>
           <FlexceptCard 
             src={Images.laptop}
             alt='Laptop'
@@ -107,7 +107,7 @@ const ProductSimulation: React.FC = () => {
               <source src={Videos.workWithUs} type='video/mp4'/>
             </video>
           </div>
-          <div className='w-full flex flex-col items-start justify-center gap-4'>
+          <div className='flex flex-col items-start justify-center w-full gap-4'>
             <div className='mb-5'>
               <h2 className='text-lg font-semibold'>Strat Your Next Design with FLEXCEPT</h2>
               <p className='text-[12px] break-words mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -115,7 +115,7 @@ const ProductSimulation: React.FC = () => {
                 est tenetur aliquam fugit illum minima qui animi nihil amet corporis nemo, 
                 id doloremque distinctio eaque sint. Neque, distinctio corrupti.</p>
             </div>
-            <button className='border-2 border-red-600 px-5 py-2 w-full text-center transition-colors duration-300 hover:bg-red-600 hover:text-slate-50'>
+            <button className='w-full px-5 py-2 text-center transition-colors duration-300 border-2 border-red-600 hover:bg-red-600 hover:text-slate-50'>
               Read Our Success Stories
             </button>
           </div>
@@ -193,13 +193,13 @@ const ProductSimulation: React.FC = () => {
               containing active and passive device simulation models for IC design. 
               Keysight EDA tools work closely with foundries to offer high-frequency 
               PDKs in Si, SiGe, GaAs, InP, and GaN processes.</p>
-            <p className='text-sm mt-3'>When choosing a foundry PDK, you must be sure that the models meet foundry 
+            <p className='mt-3 text-sm'>When choosing a foundry PDK, you must be sure that the models meet foundry 
               manufacturing requirements. Foundries validate and distribute all PDKs 
               provided for Keysight simulators, guaranteeing that the models behave optimally 
               for first-pass design success.</p>
-            <button className='mt-5 px-10 py-3 border-2 border-red-600 hover:bg-red-600 hover:text-slate-50 transition-colors duration-300'>Learn More</button>
+            <button className='px-10 py-3 mt-5 transition-colors duration-300 border-2 border-red-600 hover:bg-red-600 hover:text-slate-50'>Learn More</button>
           </div>
-          <div className='w-full flex flex-row flex-wrap items-center justify-center gap-5'>
+          <div className='flex flex-row flex-wrap items-center justify-center w-full gap-5'>
             {foundaryImages.length > 0 && foundaryImages.map((imag , index) => (
               <img 
                 src={imag} 
