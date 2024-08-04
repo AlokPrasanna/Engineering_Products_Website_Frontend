@@ -29,8 +29,8 @@ const App:React.FC = () => {
           <Route path='/product-simulation' element={<ProductSimulation />} />
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/about' element={<About />} />
-          <Route path='/research-and-is-nstumentation' element={<ReacherschAndInstumentation />} />
-          <Route path='/contol-and-automation' element={<ControlAndAutomation />} />
+          <Route path='/research-and-instumentation' element={<ReacherschAndInstumentation />} />
+          <Route path='/control-and-automation' element={<ControlAndAutomation />} />
           <Route path='/technology-for-education' element={<TechnologyForEducation />} />
         </Routes>
       </main>

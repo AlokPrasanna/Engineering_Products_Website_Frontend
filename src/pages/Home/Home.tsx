@@ -135,16 +135,19 @@ const Home: React.FC = () => {
         </div>
         <div className="md:flex justify-around gap-10 mb-[50px] mt-5">
           <WelcomeCard 
+            to="/control-and-automation"
             src={Images.automation}
             alt="Automation"
             title="Control and Automation"
           />
           <WelcomeCard 
+            to='/technology-for-education'
             src={Images.education}
             alt="Education"
             title="Technology for Education"
           />
           <WelcomeCard 
+            to="/research-and-instumentation"
             src={Images.research}
             alt="Research"
             title="Research Instrumentation"

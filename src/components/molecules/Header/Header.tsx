@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             {title:"Home",path:"/"},
             {title:"Control and Automation" , path:"/contol-and-automation"}, 
             {title:"Technology for Education" , path:"/technology-for-education"}, 
-            {title:"Research Instrumentation" , path:"/research-and-is-nstumentation"}, 
+            {title:"Research Instrumentation" , path:"/research-and-instumentation"}, 
             {title:"About" , path:"/about"}
           ]}
           showContactButton={true}
