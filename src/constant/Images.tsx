@@ -1,5 +1,3 @@
-import { ContactUs } from "../pages";
-
 // -------------------- Imports --------------------
 const Images = {
     logo:"/Images/logo.png",
