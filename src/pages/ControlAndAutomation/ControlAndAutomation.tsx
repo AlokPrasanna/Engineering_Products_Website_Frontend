@@ -2,7 +2,7 @@
 import React from 'react';
 import { Images, Videos } from '../../constant';
 import { FAQCard, FlexceptCard, Footer, ProtectInovationCard, ReviewCard } from '../../components/molecules';
-import "./productSimulation.css"
+import "./controlAndAutomation.css";
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css'
