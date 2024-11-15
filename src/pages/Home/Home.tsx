@@ -331,7 +331,7 @@ const Home: React.FC = () => {
             {["Research and development", "Electronic fabrications", "Firmware development"].map((text, index) => (
               <motion.p
                 key={text}
-                className="md:px-10 px-2 text-center py-3 md:text-lg text-[13px] mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
+                className="md:px-10 px-2 text-center py-3 md:text-[12px] text-[13px] mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
                 custom={index}
                 variants={paragraphVariants}
               >
@@ -343,7 +343,7 @@ const Home: React.FC = () => {
             {["Software developments", "In house manufacturing" ,"Electro-mechanical system developments"].map((text, index) => (
               <motion.p
                 key={text}
-                className="md:px-10 px-2 text-center py-3 md:text-lg text-[13px] mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
+                className="md:px-10 px-2 text-center py-3 md:text-[12px] text-[13px] mb-2 transition-colors duration-500 bg-orange-500 rounded-lg hover:bg-orange-400 hover:text-slate-900 text-slate-50"
                 custom={index + 3}
                 variants={paragraphVariants}
               >
