@@ -19,7 +19,7 @@ const WelcomeCard:React.FC<WelcomeCardProp> = ({ src ,alt , title , to}) => {
               alt={alt}
               className='w-[300px] h-[250px] transition-opacity duration-500 hover:opacity-50'
           />
-          <p className='py-[8px] md:text-xl text-lg text-center'>{title}</p>
+          <p className='py-[8px] text-[14px] text-center'>{title}</p>
       </div>
     </Link>
   )
