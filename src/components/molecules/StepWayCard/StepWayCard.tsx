@@ -11,15 +11,15 @@ interface StepWayCardProps {
 
 const StepWayCard:React.FC<StepWayCardProps> = ({ src , alt , title , discription }) => {
   return (
-    <div className='mt-10 w-[20%]'>
+    <div className='mt-10 w-[90%] flex flex-col items-center justify-center gap-5 border px-4 py-4'>
         <img 
             src={src}
             alt={alt}
             className='w-[300px] '
         />
         <div className='px-2 py-3'>
-            <h3 className='text-xl font-semibold'>{title}</h3>
-            <p>{discription}</p>
+            <h3 className='text-xl font-semibold text-center'>{title}</h3>
+            <p className='text-center'>{discription}</p>
         </div>
     </div>
   )

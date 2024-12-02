@@ -27,17 +27,17 @@ const About:React.FC = () => {
 
         {/* Details  */}
         <section className='flex flex-col items-center justify-center w-full mb-20'>
-            <div className='w-[50%]'>
-                <h1 className='px-5 py-[60px] text-4xl font-semibold text-center' >Accelerate Innovation to Connect
+            <div className='lg:w-[50%] w-full'>
+                <h1 className='px-5 py-[60px] text-xl lg:text-4xl font-semibold text-center' >Accelerate Innovation to Connect
                 and Secure the World</h1>
             </div>
-            <div className='flex items-center justify-center gap-10 w-[70%]'>
+            <div className='flex flex-col lg:flex-row items-center justify-center gap-10 w-[70%]'>
                 <div className='w-full'>
                     <video className='' controls>
                     <source src={Videos.about} type='video/mp4'/>
                     </video>
                 </div>
-                <div className='w-1/2'>
+                <div className='lg:w-1/2'>
                     <h2 className='text-xl font-semibold'>Innovative breakthroughs. Bold ideas. Global impact.</h2>
                     <p>Keysight is your innovation partner, delivering market-leading design, emulation, 
                         and test environments that help you develop and deploy faster, with less risk, throughout the product life cycle.
@@ -51,12 +51,12 @@ const About:React.FC = () => {
 
         {/* Step way */}
         <section className='flex flex-col items-center justify-center w-full text-slate-50 bg-[#262626]'>
-            <div className='w-[60%]'>
-                <h1 className='px-5 pt-[60px] pb-10 text-4xl font-semibold text-center' >We're with you every step of the way</h1>
-                <p className='text-lg text-center'>Whether you are looking to improve your development process, optimize your network, or harness the power of AI and digital twins for a head start on tomorrow’s 
+            <div className='lg:w-[60%] w-full'>
+                <h1 className='px-5 py-[60px] text-xl lg:text-4xl font-semibold text-center' >We're with you every step of the way</h1>
+                <p className='lg:text-lg text-[14px] px-5 text-center'>Whether you are looking to improve your development process, optimize your network, or harness the power of AI and digital twins for a head start on tomorrow’s 
                 technologies, count on Keysight.</p>
             </div>
-            <div className='flex items-center justify-center pb-10'>
+            <div className='flex flex-col items-center justify-center gap-5 px-5 pb-10 lg:flex-row'>
                 <StepWayCard 
                     src={Images.automation}
                     alt='Automation'
@@ -80,12 +80,12 @@ const About:React.FC = () => {
 
         {/* Work with */}
         <section className='flex flex-col items-center justify-center w-full mb-20'>
-            <div className='w-[60%]'>
-                <h1 className='px-5 pt-[60px] pb-10 text-4xl font-semibold text-center'>Flexcept serves as the global innovation partner
+            <div className='lg:w-[60%] w-full'>
+                <h1 className='px-5 py-[60px] text-xl lg:text-4xl font-semibold text-center'>Flexcept serves as the global innovation partner
                 for high-growth industries</h1>
-                <p className='text-xl font-semibold text-center'>We Work With:</p>
+                <p className='px-5 text-xl font-semibold text-left lg:text-center'>We Work With:</p>
             </div>
-            <div className='flex items-center justify-center gap-10 w-[80%]'>
+            <div className='flex flex-col lg:flex-row items-center justify-center gap-10 w-[80%]'>
                 <WorkWithCard 
                     src={Images.service2}
                     alt='automation'
@@ -112,7 +112,7 @@ const About:React.FC = () => {
 
         {/* Contact Us */}
         <section className='h-[20vh] w-full bg-[#D2D0DC] flex items-center justify-center'>
-            <button className='px-6 py-4 transition-colors duration-300 bg-red-600 text-slate-50 hover:bg-red-500'><Link to='/contact'>Contact Us</Link></button>
+            <button className='px-6 py-4 min-w-[200px] transition-colors duration-300 bg-red-600 text-slate-50 hover:bg-red-500'><Link to='/contact'>Contact Us</Link></button>
         </section>
 
         {/* Footer */}
