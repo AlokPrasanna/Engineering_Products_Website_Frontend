@@ -101,7 +101,7 @@ const ReacherschAndInstumentation: React.FC = () => {
 
       {/* Work with Us */}
       <section className='flex items-center justify-center w-full'>
-        <div className='flex items-center justify-center gap-5 w-[80%] p-10'>
+        <div className='flex items-center flex-col justify-center lg:flex-row gap-5 w-[90%] p-10'>
           <div className='w-full'>
             <video className='' controls>
               <source src={Videos.workWithUs} type='video/mp4'/>
@@ -125,7 +125,7 @@ const ReacherschAndInstumentation: React.FC = () => {
       {/* Reviews */}
       <section className='mt-0 mb-[80px]'>
         <AwesomeSlider
-          className='h-[65vh] w-full'
+          className='h-[75vh] w-full'
           animation="fall"
           bullets={true}
           organicArrows={true}
@@ -186,9 +186,9 @@ const ReacherschAndInstumentation: React.FC = () => {
 
       {/* Foundary process design */}
       <section className='bg-[#D2D0DC] mt-0 pt-[50px] pb-[50px] w-full flex items-center justify-center'>
-        <div className='p-10 flex items-center justify-center gap-5 w-[80%]'>
+        <div className='p-10 flex items-center flex-col lg:flex-row justify-center gap-5 w-[90%]'>
           <div className='w-full'>
-            <h1 className='text-xl font-bold'>Foundry Process Design</h1>
+            <h1 className='pb-2 text-xl font-bold text-center lg:text-left'>Foundry Process Design</h1>
             <p className='text-sm'>Integrated circuit (IC) foundries offer semiconductor processes that use PDKs 
               containing active and passive device simulation models for IC design. 
               Keysight EDA tools work closely with foundries to offer high-frequency 
@@ -197,7 +197,7 @@ const ReacherschAndInstumentation: React.FC = () => {
               manufacturing requirements. Foundries validate and distribute all PDKs 
               provided for Keysight simulators, guaranteeing that the models behave optimally 
               for first-pass design success.</p>
-            <button className='px-10 py-3 mt-5 transition-colors duration-300 border-2 border-red-600 hover:bg-red-600 hover:text-slate-50'>Learn More</button>
+            <button className='w-full px-10 py-3 mt-5 transition-colors duration-300 border-2 border-red-600 hover:bg-red-600 hover:text-slate-50'>Learn More</button>
           </div>
           <div className='flex flex-row flex-wrap items-center justify-center w-full gap-5'>
             {foundaryImages.length > 0 && foundaryImages.map((imag , index) => (
@@ -213,19 +213,19 @@ const ReacherschAndInstumentation: React.FC = () => {
 
       {/* Inivation Investment */}
       <section 
-        className=' flex flex-col items-center justify-start w-full mb-[80px] h-[85vh]' 
+        className=' flex flex-col items-center justify-start w-full mb-[80px] h-[77vh] lg:h-[75vh]' 
         style={{
           backgroundImage: `url(${Images.protectYou})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center', 
         }}
       >
-        <h1 className='text-4xl text-slate-50 font-bold text-center mt-[6%] mb-[50px]'>Protect Your Innovation Investment</h1>
-          <div className='flex items-center justify-center gap-[30px] w-[80%]'>
+        <h1 className='lg:text-4xl text-2xl text-slate-50 font-bold text-center mt-[6%] lg:mb-[50px]'>Protect Your Innovation Investment</h1>
+          <div className='flex flex-col lg:flex-row items-center justify-center lg:gap-[30px] w-[90%]'>
             <ProtectInovationCard 
               src={Images.p1}
               alt='Protect Inovarion Picture1'
-              title='FLEXCEPTCare'
+              title='FLEXCEPT Care'
               discription='Receive priority updates and enhancements, 
               faster response times, and expert support.'
             />
@@ -295,7 +295,7 @@ const ReacherschAndInstumentation: React.FC = () => {
       {/* Help and contact */}
       <section className='flex flex-col items-center justify-center bg-[#D2D0DC] p-20 mb-[80px]'>
         <h1 className='text-2xl text-semibold'>Want to help or have questions?</h1>
-        <button className='mt-5 w-[20%] px-5 py-4 bg-red-600 text-slate-50 transition-colors duration-300 hover:bg-red-500'><Link to="/">Contact Us</Link></button>
+        <button className='mt-5 lg:w-[20%] w-full px-5 py-4 bg-red-600 text-slate-50 transition-colors duration-300 hover:bg-red-500'><Link to="/">Contact Us</Link></button>
       </section>
 
       {/* Footer */}
