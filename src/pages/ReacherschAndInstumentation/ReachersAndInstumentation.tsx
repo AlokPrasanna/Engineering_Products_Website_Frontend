@@ -14,30 +14,30 @@ const ReacherschAndInstumentation: React.FC = () => {
     <div>
       {/* Header */}
       <section 
-  className="w-full h-[40vh] bg-black flex items-center relative justify-center sm:bg-cover sm:bg-top"
+  className="w-full h-[60vh] bg-black flex items-center relative justify-center sm:bg-cover sm:bg-top"
   style={{ 
     backgroundImage: `url(${Images.simulationHeader})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'top',  
+    backgroundSize: '80%',
+    backgroundPosition: 'center',  
   }}
 >
   <div 
-    className="relative flex flex-col items-center justify-center h-[80%] w-full text-slate-50 md:items-start md:h-[50%] md:w-[60%]"
+    className="relative flex flex-col items-center justify-start h-[80%] w-full"
   >
-    <span className="text-xl md:px-10 md:text-6xl">Research Instumentation</span>
-    <p className="px-5 text-base md:text-left text-center mt-5 mb-5 md:px-10 md:text-lg md:mt-5 md:mb-10 md:w-[80%] lg:w-[60%]">
+    <span className="mt-10 text-5xl font-bold text-center md:mt-0 md:text-6xl md:px-10 text-slate-100">Research Instumentation</span>
+    {/* <p className="px-5 text-base md:text-left text-center mt-5 mb-5 md:px-10 md:text-lg md:mt-5 md:mb-10 md:w-[80%] lg:w-[60%]">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, 
       harum asperiores nesciunt consequatur eveniet tenetur minima 
       accusantium et inventore in.
-    </p>
+    </p> */}
   </div>
   <div className="absolute md:bottom-0 top-[100%] flex justify-center w-full h-60 md:h-20 bg-[#D2D0DC] text-slate-900">
     <ul className="flex flex-col items-center justify-center w-full md:flex-wrap">
-      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">EDA</li>
-      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Circuit Design</li>
-      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Physical Design</li>
-      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">System Design</li>
-      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:animate-bounce hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Device Modeling</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">EDA</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Circuit Design</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Physical Design</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">System Design</li>
+      <li className="px-4 py-2 mx-2 text-lg font-semibold cursor-pointer hover:text-red-600 sm:px-5 sm:py-5 md:px-10 md:py-5">Device Modeling</li>
     </ul>
   </div>
 </section>
